@@ -1,0 +1,543 @@
+<! DOCTYPE HTML>							
+	
+<html lang="ru"> <!-- lang="ru" вкл рус. яз.,браузер может включить проверку орфографии предложить перевод--> 
+
+<head>
+	<meta charset="utf-8"> <!--кодировка-->
+	<meta name="keywords" content="сайт ,обучение хтмл">	<!--ключевые слова для страницы-->
+	<meta name="description" content="я учу html">	<!--описание сайта-->
+	<meta name="autor" content="Serkov Roman">	<!-- указывать автор-->
+	<meta http-equiv="refresh" content="60">	<!--обновляет страницу каждые 60 сек-->
+	<title>Html Lessons</title> <!--Название вкладки-->
+	<link rel="stylesheet" href="libs/reset.css"> <!--файл сброса стилей -->
+	<link href="style.css" rel="stylesheet" type="text/css"> <!--link что бы связать HTML и CSS, href-сылка на файл CSS-->
+	<script type="text/javascript" src="libs/jquery-3.1.1.min.js" ></script> <!--подключение jQuery -->
+	<script type="text/javascript" src="libs/script.js"></script> <!--подключение javascript свои скрипты нужно подключать после  jQuery-->
+</head>
+
+<body> <!--тело сайта-->
+
+<!---Следующие теги НЕ должны размещаться внутри контейнера <pre>: <big>, <img>, <small>, <sub> и <sup>.-->
+	 <a id="top"></a> <!--якорь сюда поднимиться скрол снизу или с того места гдк поставить метку -->
+	<hr width="600">   <!-- width размер.Рисует горизонтальную линию-->
+	<sub>22</sub> 					<!-- нижний индекс-->
+	<span>M</span><sup>2</sup> 		<!--sup верхний индекс-->
+	<del>зачеркнутый</del> 			<!-- зачеркнутый текст-->
+	<s>зачеркнутый</s> 			    <!-- зачеркнутый текст-->
+	<p><ins>подчеркнутый</ins></p>  <!-- подчеркнутый текст-->
+   <p><u>подчеркнутый</u></p>      <!-- подчеркнутый текст-->
+    
+	<pre>
+	-------
+	---
+	-------			<!-- pre отображает текст как он есть-->
+	---
+	</pre>
+	<p><small>уменьшить слово</small></p> 
+	<p><big>увеличить стово</big></p>
+<!--- заголовки-->
+	<h1>Hello Roman</h1> 
+	<h6>Hello</h6>
+
+<!--абзац-->
+	<br>Serkov 
+	<br><br>Serkov
+
+<!--параграфы-->
+	<p>Параграф1</p>
+	<p>Параграф2</p>
+	<p align="justify">Параграф3</p> <!--align="justifi вырпвнивает текст что бы был без рваных краёв left-выравнивание по левому краю-->
+
+<!---Жирный текст-->
+	<strong>Roman</strong> <!--подчеркивает важность текста-->
+	<b>Жирный Текст</b> <!-- декоративный елемент (жирный текст)-->
+
+<!--курсив-->
+	<i>Roman</i>    <!-- декоративный елемент (курсивный текст)-->
+	<em>Роман</em> <!--похоже на курсив, но используеться для акцентирование внимания на слове-->
+
+<!-- создание сылки в href вставить сылку-->
+<!--если к сылке добавить атрибут download,то файл который в сылке будет скачиваться -->
+	<p><a href="https://vk.com/roma_serkov">Сылка</a></p>
+	<p><a href="https://vk.com/roma_serkov" target="_blank">Сылка с таргет</a></p> <!-- target="_blank" открывает сылку в новой вкладке-->
+	<br>
+	<a href="img/girl.jpg">Картинка</a>		<!-- сылка на картинку-->
+	<br>
+	<a href="Рем Дигга-Кабардинка.mp3">Песня</a> <!-- сылка на песню-->
+	<br>
+	<a href="WinRAR.zip">Архив</a> <!-- скачать архив (сылка на архив)-->
+	<br>
+	<a href="Word.docx">Word Doc</a> <!-- скачать документ(сылка надокумент)-->
+	<br>
+	<a href="mailto:romaserkov@ukr.net">Написать админу</a> <!--сылка на почту (сразу написать на почту)-->
+	<br>
+	<a href="callto:skypelogin">call in skype</a>
+<!-- из картинки можно сделать сылку-->
+	<p>
+		<a href="https://vk.com/roma_serkov"><img src="https://pp.vk.me/c631721/v631721175/3e03a/y53qfMlI7W0.jpg"></a>
+	</p>
+
+<!--Блочный елемент (текст находить под текстом всолбик)-->
+	<div>Блок</div> <!-- групирует элементы в блок-->
+	<div>Блок1</div> <!-- выдиляет отдельный блок для текста-->
+	<div>Блок2</div>
+	<div>Блок3</div>
+
+<!-- строчный елемент (текст в одну строку) в CSS меняет пар-ры шрифта -->
+	<span>Строка1</span>
+	<span>Строка2</span>
+	<span>Строка3</span>
+
+<!-- span входит в  div-->
+	<div><span>спан в див1</span></div>
+	<div><span>спан в див2</span></div>
+	<div><span>спан в див3</span></div>
+
+<!--таблицы-->
+	<table border="2" cellpadding="5" cellspacing="5" align="center"> <!--border ширина рамки width  и height ширина и высота табл.,cellpadding-добавляет отступ внутри ячеек cellspacing отступ между ячейками,align="center" выравнивание табл по центру(по правой строне и левой)-->
+		<tr><th>название столбца1</th><th>название столбца2</th></tr> 	<!-- th название столбца-->
+		<tr><td>Ячейка1</td><td>Ячейка1.1</td></tr>  <!-- tr строка--> <!--width="4px" ширина ячейки-->
+		<tr><td>Ячейка2</td><td>Ячейка2.2</td></tr>  <!--td столбец--> 
+		<tr><td>Ячейка3</td><td>Ячейка3.3</td></tr>  <!-- valign="top" прижим текста к верхнему краю-->
+	</table>										 <!--valign="middle" выравнивание текста по центру -->
+													 <!-- valign="bottom" прижим текста к нижнему краю-->
+<!-- обьединение ячеек в таблицах-->
+<br><table border="2" height="100" width="400" cellspacing="0">
+<tr><td colspan="2">Я11</td></tr> <!-- colspan='2' обьединяет ячейки 2-к-во ячеек,ячейку с которой обьединяем надо удалить--> 
+<tr><td align="center">Я12</td><td>Я22</td></tr> <!--align="center" выравнивание текста по центру-->
+<tr><td rowspan="2" >Я13</td><td>Я23</td></tr>	<!--width- ширина ячейки (можно указывать в процентах)-->
+<tr><td>Я24</td></tr>  <!--обьединение столбцов  rowspan="2" 2-к-во обьединяемых столбцов(из след строки удалить первую ячейку)-->
+</table>
+	
+<!--списки-->
+	<ul>
+		<li>Пункт1</li> <!-- ul список с пунсонами-->
+		<li>Пункт2</li> <!-- li фрагмент списка--> 
+		<li>Пункт3</li>
+	</ul>
+	
+<ol start="3" type="A"> <!-- start="3" список будкт начинаться с 3-го пункта-->
+	<li>Пункт1</li> <!-- ol нумерованый список-->
+	<li>Пункт2</li> <!-- li фрагмент списка-->
+	<li>Пункт3</li> <!-- есть типы для нумерации А-большие буквы I-римские символы-->
+</ol>
+
+<dl>
+	<dt>пункт1</dt>		<!-- список с подпунктами dt-пункт dd-подпункт-->
+	<dd>попункт1</dd>   
+	<dt>пункт2</dt>
+	<dd>подпункт2</dd>
+	<dt>пункт3</dt>
+	<dd>подпункт2</dd>
+</dl>
+<!--disabled параметр который отключает инпут-->
+<!--autofocus фокусирует на инпут(например в поле сразу ставит курсор-->
+<!--readonly отключает инпут в отличии от disabled readonly читается в php-->
+	<label>введите что-то</label> <!-- надпись (обычно используеться перед полем для ввода)-->
+<form method="POST" action="/" autocomplete="on" target="iframe">   <!--пар-ры URL инпута action="/" куда направляет форма autocomplete="on" если стр обновилась,то форма останеться заполненой,target="iframe" имня фрейма куда загружаеться результат с формы(это не лбязательно)-->	<!-- инпут должен иметь тип (текст,поле,кнопка...) -->
+		<p><input type="text" name="info" placeholder="текст">	</p>		<!-- type тип инпута-->         
+		<p><input type="text" name="info1" placeholder="текст" required spellcheck="true" > </p>  <!-- placeholder -текст на фоне инпута(поля для ввода) required spellcheck="true" проверка орфографии (true false default)-->
+		<p><input type="submit" name="enter" value="я кнопка">	</p>			<!--submit-кнопка,text-текст-->
+																		<!-- value -значение по умолчанию при отправке знчение value будет идти на сервер-->
+<!-- size="значение" задавать размер инпута-->							<!-- name название инпута (действие инпута)-->
+<!--maxlength="значение" максимальное к-во симвотов которое можно ввести-->	<!--required делает поле обязательныи для заполнения-->
+
+	<p><input type="checkbox" required></p>		<!-- чекбокс ,checked галочка будет стоять по умолчанию-->
+	<p><input type="file" accept="audio/*"></p>  <!--файл(выберите файл)accept пропускает тип файлов-->
+	<p><input type="hidden"></p>				<!-- скрытое поле-->
+	<p><input type="image" src="img\cash.jpg" alt="деньги" width="900"></p> <!-- image-картинка, src-путь к картинке ,alt  обязательный па-р название-->
+	<p><input type="password" required placeholder="password"></p> 		<!--поле для ввода пароля-->
+	<p><input type="radio" name="radio" value="вася">Вася</p>		<!--переключатель типо чексбокса только убрать нельзя-->
+	<p><input type="radio" name="radio"value="Петя">Петя</p>		<!--если поставить одинаковые name,то  выбрать можно только 1-->
+	<p><input type="reset" value="reset"></p>
+	<p><input type="color" value="#ffffff"></p>	<!--color инпут для выбора цвета,value делпет цвет по умолчанию-->
+	<p><input type="date"></p>					<!--date инпут для указания даты-->
+	<p><input type="email" required></p>		<!--email пропускает только правельные маилы-->
+	<p><input type="submit" value="e-mail"></p>
+	<p><input type="number" min="0" max="10"></p> <!--инпут для введения числа min и max для установки минимального и максимального числа-->
+	<p><input type="url" ></p> 					  <!--поле для ввода URL адресов-->
+    <p><input type="range" min="1" max="100" step="5"></p> <!--поле-диапазон (ползунок) min max минимальное и максимальное значение step шаг значений -->
+    <p><input type="image" src="#" alt="text"></p><!--кнопка-картинка -->
+    
+    <button type="button" >Кнопка</button>  <!-- кнопка тип buttom просто кнопка,submit-кнопка отправляет данные с формы,reset-обновляет форму-->    
+     
+     <fieldset> <!--обрамление для формы(групппа для формы) -->
+        <legend>Форма</legend>  <!--название группы формы -->
+        <p><input type="text" ></p>
+        <p><input type="password" ></p>
+        <p><input type="submit" ></p>
+    </fieldset>   
+     
+    
+<p>
+<select>	<!-- select выпадающий список-->
+	<option selected>1</option>	<!--option елемент списка selected значение по умолчанию -->
+	<option disabled >2</option> <!--отключенный инпут -->
+	<option>3</option>
+</select>
+</p>
+
+<p>
+<textarea cols="5" rows="3" wrap="hard">123</textarea></p> <!--textarea поле с несколькими строками "123" это надпись в строке,wrap="hard" на сервер будут отпр текст с переносом строк(обязательно указать cols) -->
+<!-- cols-ширина поля rows-высота поля-->
+
+
+</form> <!--в теге форм надо писать инпуты-->
+	
+<p><audio src="music.mp3" controls loop>
+    <source src="#">   <!--тут можно указывать видео в другом формате что бы все браузеры поддерживали-->
+</audio></p>			 <!-- audio  добавляет аудиофайл controls добавляет елемент контроля аудио-->
+
+<p><video src="video.mp4#t=2.7" controls width="600" height="600">
+    <source src="#">   <!--тут можно указывать видео в другом формате что бы все браузеры поддерживали-->
+    <source src="#">
+</video></p>  <!--loop зацыкливает возпроизведение, autoplay автомотически включает музыку при обновлении страницы-->
+<!--#t=2.7 видео идес с 2 секунды и до 7сек.",3"-до 3ей сукунды -->
+<!--poster=" путь к картинке" делат превью к видео-->
+<!--preload зарание подгружает видео при входе на сайт -->
+<!--muted отключает звук в видео  -->
+
+<!-- картинки-->
+	<img src="girl.jpg" alt="картинка" title="girl"> <!--title при наведении высвечивает назван,width ширина height высота alt-текст который будет выводиться если картинка не загрузиться--> 
+
+    <img src="girl.jpg" alt="картинка" title="girl" srcset=" путь к картинке 2x"><!--srcset=" путь к картинке"  2x(если плотность пикселей в 2 раза больше или картинку увеличили вдвое,то загружаеться второе изображение как правило с лучшим качеством)-->
+    
+<!--iframe подключение документа -->
+    <iframe src="сылка на документ" name="frame"> <!--подкалючаем документ и он показфываеться на странице в рамке,name имя фрейма -->
+        тут должен быть подключенный документ <!--если док не загрузиться,то будет эта надпись -->
+    </iframe>
+    
+    <a href="#" target="frame"> </a> <!--target="frame" эта сылка будет откр в фрейме c именем "фрейм" -->
+
+<!-- новое в HTML5-->
+	<header>
+		<a href="#" id="logo"></a>  <!-- пример шапки сайта-->
+	</header>
+
+	<nav>
+		<p><a href="#">Пункт меню1</a></p>
+		<p><a href="#">Пункт меню2</a></p> <!-- пример меню сайта id-nav (по умолчанию)-->
+		<p><a href="#">Пункт меню3</a></p>
+		<p><a href="#">Пункт меню4</a></p>
+	</nav>
+	
+<!--пример статьи id=article(по умолчанию)-->
+	<article>		
+		<header>	<!--шапка статьи-->		
+			<h1>Заголовок статьи</h1>	
+			<img src="#" alt="название"> 	
+		</header>
+	 <p>Текст статьи</p>
+	 <p>Опубликовано:<time datetime="2016-10-21" pubdate>Пятница 21 октября 2016</time></p>
+	</article>  <!-- timedate-тег-контейнер для того что-бы робот понял дату.Pubdate-означает что это дата публикации-->
+
+<!--пример новостей-->
+<hgroup>
+    <h1>заголовок2</h1> <!--hgroup обьединяет заголовки в групп( B CSS можно стилизировать вре заголовки в группе) -->
+    <h2>заголовок2</h2>
+</hgroup>
+
+<section id="news"> <!--для статьей -->
+	<article>       <!--для одной статьи -->
+		<h1>Заголовок</h1> 
+		<p>Текст статьи</p>
+		<blockquote cite="http://google.com" >by google</blockquote><!--для подписи cite источник откуда взяли тезу-->
+	</article>
+</section>
+
+<aside>PS Roman</aside> <!-- тег для выносок (второстепенная навигация)-->
+
+<footer>
+<p>Подвал</p> <!--используеться для подвала-->
+</footer>
+
+<figure> <!--групировать изображение (обычно групируют картинки) -->
+    <img href="#" alt="">
+    <figcaption>описание</figcaption> <!--подпись к картинке -->
+</figure>
+
+<menu type="toolbar"> <!--интерактивныый елемент ( типо контекстное меню ) -->
+    <li>1</li> <!--type="contacts" контекстное меню-->
+    <li>2</li> <!--type="toolbar" бар-управление -->
+    <li>4</li> <!--type="list" обычный список-->
+</menu>
+
+
+<!-- УРОКИ ПО CSS-->	<!-- УРОКИ ПО CSS-->	<!-- УРОКИ ПО CSS-->
+
+<p class="text">Сдесь написан текст</p> <!--пишем название класа для того что бы работать с ним в CSS-->
+
+<!--Таблицы-->
+<table border="7"  align="center" cellpadding="0" cellspacing="0" id="main-table" width="100%">
+	<tr>
+		<td>Menu</td> 
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	
+	<tr class="tr">
+		<td class="menu-td">21</td>
+		<td><p class="text">Сдесь написан текст</p></td>
+		<td>23</td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td>32</td>
+		<td>33</td>
+	</tr>
+</table>
+о
+<!--Списки-->
+		<h2>Заголовок</h2>
+	<ul class="spisok">
+		<li>Текст1</li>
+		<li>Текст2</li>
+		<li>Текст3</li>
+		<li>Текст4</li>
+	</ul>
+	
+	<!--СЫЛКИ*/	/*СЫЛКИ*/	/*СЫЛКИ*/-->
+
+	<p><a href="#">Глвная</a></p>
+	<p><a href="#">Новости</a></p>
+	<p><a href="#">Видео</a></p>
+	<p><a href="#">Контакты</a></p>
+
+<!--/*ОТСТУПЫ*/	/*ОТСТУПЫ*/	/*ОТСТУПЫ*/-->
+
+<h1>Заголовок1</h1>
+<h2>Заголовок2</h2>
+<h3>Заголовок3</h3>
+
+<!--ОТСТУПЫ	ОТСТУПЫ	ОТСТУПЫ Внутрение -->
+<table class="tbl" border="10px" width="80%" height="200px">
+	<tr>
+		<td>Текст1</td>	<td> Текст2</td>
+	</tr>
+		<tr>
+			<td class="tbltd">Текст3</td>	<td>Текст4</td>
+		</tr>
+	<tr>
+		<td>Текст5</td>	<td><p id="parr">Сдесь написать какой-то текст</p></td>
+	</tr>
+</table>
+
+<!--DISPAY--> <!--DISPAY--> <!--DISPAY-->
+	<a href="#" class="stroka">Сылка1</a>
+	<a href="#" class="stroka">Сылка2</a>
+	<a href="#" class="stroka">Сылка3</a>
+	<a href="#" class="stroka">Сылка4</a>
+
+	<div class="div">Текст 1</div>
+	<div class="div">Текст 2</div>
+	<div class="div">Текст 3</div>
+
+	<a href="#" class="stroka1">Сылка1</a>
+	<a href="#" class="stroka1">Сылка2</a>
+	<a href="#" class="stroka1">Сылка3</a>
+	<a href="#" class="stroka1">Сылка4</a>
+
+<table class="tabl2" border="3px" cellpadding="0" cellspacing="0" >
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+
+	<tr>
+		<td>3</td>	
+		<td>4</td>
+	</tr>
+</table>
+<!--таблица из дивов-->
+<div class="divtbl">
+	<div class="divtr">
+		<div class="divtd">1</div>
+		<div class="divtd">2</div>
+	</div>
+	<div class="divtr">
+		<div class="divtd">3</div>
+		<div class="divtd">4</div>
+	</div>
+</div>
+
+<div class="divtbl">
+	<div class="divtr">
+		<div class="divtd">1</div>
+		<div class="divtd">2</div>
+	</div>
+	<div class="divtr">
+		<div class="divtd">3</div>
+		<div class="divtd">4</div>
+	</div>
+</div>
+
+<!-- позиционирование<-->	<!-- позиционирование--> 	<!-- позиционирование-->
+<div class="flower">
+	<img src="img/flower.jpg" alt="flower">
+</div>
+
+<div class="cherep">
+	<img src="img/cherep.jpg" alt="cherep">
+</div>
+
+
+
+<table class="one"  cellpadding="0" cellspacing="0" >
+	<tr>
+		<td>1</td>
+		<td><div><img src="img/one.png" alt="one" class="one1"></div></td>
+	</tr>
+
+	<tr>
+		<td>3</td>	
+		<td>4</td>
+	</tr>
+</table>
+<a href="#top">наверх</a> <!--якорь, отсюда подниматься наверх (наверху метка к ней поднимиться скрол) -->
+
+<!--CSS3-->  <!--CSS3-->     <!--CSS3-->     <!--CSS3-->     <!--CSS3-->
+
+<!--закругление границ-->
+<div class="first-div">
+    
+</div>
+
+<!--Тени елементов-->
+
+<div class="first-div">
+    
+</div>
+
+<!--тень текста-->
+
+<h1 id="text-shadow">Тень текста</h1>
+
+<!--Перенос слов-->
+
+<div class="second-div">
+<p> eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+</div>
+
+<textarea cols="30" rows="15" class="textarea">
+    текст
+</textarea>
+
+<!--прозрачность--> <!--прозрачность-->     <!--прозрачность-->
+
+<div class="div3">
+    
+</div>
+
+<!--анимация трансформация -->  <!--анимация трансформация -->  <!--анимация трансформация -->
+
+<div class="div4">
+    
+</div>
+
+<div class="div5">
+    
+</div>
+
+<!--псевдоклассы-->  <!--псевдоклассы-->   <!--псевдоклассы-->
+<table celpadding="0" celspasing="0" align="center" id="table7">
+    <tr>
+    <td>1</td><td>2</td>
+    </tr>
+   
+    <tr>
+    <td>3</td><td>4</td>
+    </tr>
+   
+    <tr>
+    <td>5</td><td>6</td>
+    </tr>
+    
+    <tr>
+    <td>7</td><td>8</td>
+    </tr>
+   
+    <tr>
+    <td>9</td><td>10</td>
+    </tr>
+</table>
+
+<table celpadding="0" celspasing="0" align="center" id="table8">
+    <tr>
+    <td>1</td><td>2</td>
+    </tr>
+   
+    <tr>
+    <td>3</td><td>4</td>
+    </tr>
+   
+    <tr>
+    <td>5</td><td>6</td>
+    </tr>
+    
+    <tr>
+    <td>7</td><td>8</td>
+    </tr>
+   
+    <tr>
+    <td>9</td><td>10</td>
+    </tr>
+</table>
+
+<!--менять вид инпутов,фильтр елементов по типу-->
+<form id=form>
+    <input type="text" value=""> <br>
+    <input type="password" value=""> <br>
+    <input type="submit" value="Добавить"> <br>
+    <input type="reset" value="бросить"> <br>
+    
+</form>
+
+<div class="div-calc">
+    
+</div>
+
+<p class="ps-el">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, inventore?</p>
+	
+<!--Javascript-->
+	<div class="form_JS">
+		<input type="number" id="val1"><br>
+		<hr>
+		<input type="number" id="val2"><br>
+		<hr>
+		<button>Ok</button>
+	</div>
+	
+	<div id="zn">
+		.......
+	</div>
+	
+	<div id="pk">
+		.......
+	</div>
+
+	<div class="test">Тест-1</div>
+	<div class="test">Тест-2</div>
+	<p class="test">Тест-3</p>
+	
+	<img src="1.jpg" alt="1" >
+	<img src="2.jpg" alt="1"  title="image">
+	
+	<ul>
+		<li id="menu"><a href="#">Сылка_1</a></li>
+		<li><a href="#">Сылка_2</a></li>
+		<li><a href="#">Сылка_3</a></li>
+		<li><a href="#">Сылка_4</a></li>
+		<li><a href="#">Сылка_5</a></li>
+	</ul>
+
+
+	
+</body>
+
+</html>	
+
+
+
+
+
+
